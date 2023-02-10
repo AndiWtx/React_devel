@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Welcome } from './Welcome';
-import { SayAge } from './SayAge';
+
 
 class App extends React.Component {
   render() {
-    return (
-      <div>
-        <Welcome name='John' />
-        <SayAge age={46} />
-      </div>
-    )
+    return <Welcome name='John' />
   }
 }
 const nameApp = <App />;
