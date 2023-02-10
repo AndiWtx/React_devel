@@ -6,10 +6,7 @@ const helloWorldElement = <HelloWorld />
 
 export class App extends React.Component {
   render() {
-    return <div>
-      {helloWorldElement}
-      <p>What a wonderful day!</p>
-    </div>;
+    return <div>{helloWorldElement}</div>;
   }
 }
 
