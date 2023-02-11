@@ -5,12 +5,21 @@ import { SayAge } from './SayAge';
 
 export class Welcome extends React.Component {
   render() {
-    return (
-      <div>
-        <p>Welcome, {this.props.name}!</p>
-        <SayAge age={19} />
-      </div>
-    )
+    let ageVerify = 19;
+    if (ageVerify >= 18) {
+      return (
+        <div>
+          <p>Welcome, {this.props.name}!</p>
+          <SayAge age={ageVerify} />
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <p>Welcome, {this.props.name}!</p>
+        </div>
+      )
+    }
   }
 }
 
