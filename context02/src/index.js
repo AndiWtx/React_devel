@@ -23,8 +23,8 @@ export class LanguageChanger extends React.Component {
         </select>
         <LanguageContext.Provider value={this.state.language}>
           <HelloWorld />
-          <h1>The selected language is: {this.state.language}</h1>
         </LanguageContext.Provider>
+
       </div>
     )
   }

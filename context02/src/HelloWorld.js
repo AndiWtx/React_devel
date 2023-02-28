@@ -14,11 +14,12 @@ export class HelloWorld extends React.Component {
   render() {
     return (
       <div>
-        <LanguageContext.Consumer>
+        <LanguageContext.Consumer >
           {(language) => {
             return (
               < div >
                 < h1 >{Strings[language].current_hello}</h1 >
+                <h1>The selected language is: {language}</h1>
               </div>
             )
           }
