@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 
 
 export class Welcome extends React.Component {
@@ -9,7 +8,6 @@ export class Welcome extends React.Component {
 }
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render();
+
 
 
