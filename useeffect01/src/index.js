@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { HandleButtonClick } from './HandleButtonClick'
 
 
-const btn = <HandleButtonClick onCounterChange />
+const btn = <HandleButtonClick />
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(btn);

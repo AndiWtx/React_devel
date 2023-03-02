@@ -3,6 +3,14 @@ import React, { useState, useEffect } from 'react';
 export function HandleButtonClick({ initialValue = 0 }) {
   const [counter, setCounter] = useState(initialValue)
 
+  useEffect(() => {
+    console.log('i have mounted')
+
+    return () => {
+      console.log("I'm about to be unmounted")
+    }
+
+  }, [])
 
   useEffect(() => {
 
