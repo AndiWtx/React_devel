@@ -13,7 +13,7 @@ export function useGithubUser() {
         response.status !== 200 ? setError(new Error()) : response.json()
       )
       .then((json) => setUser(json))
-      .catch((error) => setError(new Error(error)))
+      .catch((error) => setError(new Error()))
       .finally(() => setLoading(true));
   };
 

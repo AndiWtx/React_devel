@@ -14,7 +14,6 @@ export function GithubUser({ username }) {
       {loading && <h1>Loading...</h1>}
       {error && <h1>Error</h1>}
       {user && <h3>{user.login}</h3>}
-      {/* I used the login because I don't have a name displayed for this username in console :) */}
 
     </div>
   )
