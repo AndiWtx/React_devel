@@ -1,7 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Welcome } from "./Welcome";
-import { Counter } from "./counter/Counter";
+import { Counter } from "./Counter";
+import { ShowGithubUser } from "./ShowGithubUser";
 
 
 export function RouteDev() {
@@ -11,8 +12,11 @@ export function RouteDev() {
       <Route path="/" element={<Welcome name="John" />} />
       <Route
         path="/counter"
-        element={<Counter />}
+        element={
+          <Counter />
+        }
       />
+      <Route path="/users/:username" element={<ShowGithubUser />} />
     </Routes>
   );
 
